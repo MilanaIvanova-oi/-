@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маникюр и педикюр | КМИЗ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">КМИЗ</div>
+            <input type="search" class="header__search" placeholder="Поиск">
+            <div class="header__contacts">
+                <a href="tel:88002343080" class="header__phone">8 (800) 234-30-80</a>
+                <a href="#login-section" class="header__login-btn">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container nav__inner">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Как купить</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Оптовикам</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Компания</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Вопрос-Ответ</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="page-title">Маникюр и педикюр</h1>
+
+            <section class="products">
+                <!-- Псевдокласс :nth-child используется в CSS для чередования стилей -->
+                <article class="product-card">
+                    <div class="product-card__img"></div>
+                    <h3 class="product-card__title">Твердосплавные фрезы</h3>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img"></div>
+                    <h3 class="product-card__title">Алмазные головки</h3>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img"></div>
+                    <h3 class="product-card__title">Мария Кидяева рекомендует</h3>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img"></div>
+                    <h3 class="product-card__title">Фрезы стерильные для маникюра</h3>
+                </article>
+            </section>
+
+            <section class="description">
+                <p>Фрезы КМИЗ для маникюра и педикюра от производителя. 90 лет на рынке. Заводские цены, полный ассортимент, гарантированное качество. Натуральный алмаз, твердый сплав и нержавеющая сталь.</p>
+                <p>Аппаратный маникюр пользуется большой популярностью среди мастеров и клиентов. Все потому, что мастерам он позволяет справиться с любой задачей, а клиентам нравится атравматичность и безопасность данного вида маникюра.</p>
+            </section>
+
+            <!-- Форма входа вынесена вниз страницы, как вы просили -->
+            <section class="login-section" id="login-section">
+                <div class="login-card">
+                    <h2 class="login-card__title">Личный кабинет</h2>
+                    <div class="login-tabs">
+                        <button class="login-tab login-tab--active">Логин или E-Mail</button>
+                        <button class="login-tab">Регистрация</button>
+                    </div>
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="login-input">Логин *</label>
+                            <input type="text" id="login-input" class="form-control" placeholder="Введите логин">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-input">Пароль *</label>
+                            <input type="password" id="password-input" class="form-control" placeholder="Введите пароль">
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                Запомнить меня
+                            </label>
+                            <a href="#" class="forgot-link">Забыли пароль?</a>
+                        </div>
+                        <button type="submit" class="btn-submit">Войти</button>
+                        <p class="form-note">* — Обязательные поля</p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025–2026 КМИЗ. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
